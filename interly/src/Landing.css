@@ -1,0 +1,59 @@
+.header{
+    margin: none;
+    height: 65px;
+    background-color: lightblue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .logo{
+    height: 50px;
+    margin-left: 100px ;
+    border-radius: 100px;
+}
+
+.header .signup{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    height: 30px;
+    margin-right: 100px;
+    border-radius: 10px;
+    color: #fff;
+    background: #000;
+    font-weight: bold;
+}
+
+.heros{
+    display: flex;
+    justify-content: center;
+    background-color: lightblue;
+}
+
+.heros .getstarted{
+    border: 2px solid black;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.heros .justimage{
+    border: 2px solid black;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+}
+
+.heros .startbutton{
+    border-radius: 10px;
+    font-weight: bold;
+    background-color: black;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    padding: 5px;
+}
