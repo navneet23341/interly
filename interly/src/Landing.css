@@ -33,6 +33,69 @@
     border-radius: 30px;
 }
 
+.featuresection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: pink;
+    margin: 25px;
+    border-radius: 30px;
+    height: 400px;
+    padding: 15px;
+}
+
+.work{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: bisque;
+    margin: 25px;
+    border-radius: 30px;
+    height: 300px;
+    padding: 15px;
+    justify-content: space-evenly;
+}
+
+.rolesection{
+    display:flex;
+    background-color: greenyellow;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:25px;
+    border-radius: 30px;
+    height: 600px;
+    padding: 15px;
+    gap:20px
+}
+
+.rolesection .rolec{
+    margin-left: 160px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    display: inline-block;
+}
+
+
+
+.work .flow{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.work .flow .arrow{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    height: 40px;
+}
+
 .heros .getstarted{
     flex: 1;
     display: flex;
@@ -46,14 +109,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 600px;
+    height: 560px;
     position: relative;
 }
 
 .heros .bolb{
     position: absolute;
     z-index: 1;
-    height: 600px;
+    height: 560px;
 }
 
 .heros .bolbcat{
@@ -79,4 +142,11 @@
     width: 100%;
     gap: 20px;
     display: flex;
+}
+
+.featuresection .featurecard{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 20px;
 }

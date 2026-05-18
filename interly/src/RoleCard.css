@@ -1,0 +1,11 @@
+.role{
+    display: inline;
+    padding:20px;
+    margin: 10px;
+    text-align: center;
+    display: inline-block;
+    height: 150px;
+    align-items: center;
+    width: 300px;
+    background-color: lightcoral;
+}
