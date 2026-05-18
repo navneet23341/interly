@@ -124,6 +124,10 @@
     z-index: 2;
 }
 
+.heros .bolbcat:hover{
+    height: 300px;
+}
+
 
 .heros .startbutton{
     border-radius: 10px;
@@ -149,4 +153,14 @@
     justify-content: space-evenly;
     width: 100%;
     gap: 20px;
+}
+
+.header .signup:hover{
+    box-shadow: 5px 5px 20px blue;
+    height: 32px;
+}
+
+.heros .getstarted .startbutton:hover{
+    box-shadow: 5px 5px 20px blue;
+    font-size: 18px;
 }

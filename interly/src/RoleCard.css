@@ -8,4 +8,13 @@
     align-items: center;
     width: 300px;
     background-color: lightcoral;
+    border-radius:30px ;
+    border: 2px solid black;
+}
+
+.role:hover{
+    transition: ease;
+    height: 155px;
+    width: 305px;
+    box-shadow: 2px 2px 20px;
 }

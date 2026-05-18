@@ -7,8 +7,15 @@ import FeatureCard from "./FeatureCard"
 //import bolb from "./assets/bolb.mp4"
 import arrow from "./assets/arrow.png"
 import RoleCard from "./RoleCard.jsx"
+import { useNavigate } from "react-router-dom"
 
 function Landing(){
+
+    const navigate = useNavigate()
+
+    const handleStart = ()=> {
+        navigate("/login")
+    }
     
     return(
         <>
@@ -21,7 +28,7 @@ function Landing(){
             <div className="getstarted">
                 <h1>Interly</h1>
                 <p>Ai interview platform</p>
-                <button className="startbutton">Get Started</button>
+                <button className="startbutton" onClick={handleStart}>Get Started</button>
                 <div className="statssection">
                     <StatCard number="500+" name="Interviews Completed" ></StatCard>
                     <StatCard number = "50+"  name = "Roles Supported"></StatCard>

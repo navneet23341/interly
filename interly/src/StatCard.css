@@ -11,3 +11,10 @@
     border-radius: 30px;
     border: 2px solid black;
 }
+
+.Card:hover{
+    transition: ease;
+    height: 205px;
+    width: 205px;
+    box-shadow: 2px 2px 20px;
+}
