@@ -1,5 +1,6 @@
 .header{
-    margin: none;
+    border-radius: 30px;
+    margin: 10px;
     height: 65px;
     background-color: lightblue;
     display: flex;
@@ -28,10 +29,11 @@
     display: flex;
     justify-content: center;
     background-color: lightblue;
+    margin: 25px;
+    border-radius: 30px;
 }
 
 .heros .getstarted{
-    border: 2px solid black;
     flex: 1;
     display: flex;
     align-items: center;
@@ -40,13 +42,25 @@
 }
 
 .heros .justimage{
-    border: 2px solid black;
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 600px;
+    position: relative;
 }
+
+.heros .bolb{
+    position: absolute;
+    z-index: 1;
+    height: 600px;
+}
+
+.heros .bolbcat{
+    position: absolute;
+    z-index: 2;
+}
+
 
 .heros .startbutton{
     border-radius: 10px;
@@ -56,4 +70,13 @@
     font-family: 'Courier New', Courier, monospace;
     font-size: 15px;
     padding: 5px;
+}
+
+.getstarted .statssection{
+    margin-top: 50px;
+    margin-left: 30px;
+    justify-content: space-evenly;
+    width: 100%;
+    gap: 20px;
+    display: flex;
 }
