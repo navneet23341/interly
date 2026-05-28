@@ -1,9 +1,11 @@
 import { useState } from "react";
 import loginboximage from "./assets/loginboximage.jpg"
 import "./Login.css"
+import { useNavigate } from "react-router-dom";
 
 function Login(){
 
+    const navigate = useNavigate();
     const [loginname , setloginname] = useState("");
     const [password , setpassword] = useState("");
 
@@ -17,7 +19,22 @@ function Login(){
     const handlesubmit= async (event)=>{
         event.preventDefault();
 
-        const response = await fetch("")
+        const response = await fetch("http://localhost:3000/login" , {
+            method:"POST",
+            headers:{
+                "Content-Type":"application/json"
+            },
+            body: JSON.stringify({
+                loginname,
+                password
+            }),
+        });//info goes to backend
+
+        const data = await response.json(); //info comes from backend 
+
+        if(data.success){
+            navigate(`/${loginname}/dashboard`);
+        }
     }
     
     return(<div className="loginbox">

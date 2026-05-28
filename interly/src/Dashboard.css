@@ -1,0 +1,62 @@
+.whole{
+    display: flex;
+    height: 100vh;
+    background-color: #ececec;
+}
+
+.whole .feature{
+    width: 250px;
+    border: 2px solid black;
+}
+
+.whole .contnt{
+    display: flex;
+    flex: 1;
+    border: 2px solid black;
+    flex-direction: column;
+}
+
+
+.feature{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.feature .allfeature{
+    display: flex;
+    flex-direction: column;
+}
+
+.feature .catlogo{
+    height: 50px;
+    border-radius: 30px;
+    margin-top: 45px;
+}
+
+.feature .out{
+    margin-bottom: 45px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    border-radius: 10px;
+}
+.feature .out:hover{
+    background-color: black;
+    color: white;
+}
+
+.feature .allfeature .featurebutton{
+    border: none;
+    outline: none;
+    background: none;
+    margin: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 4px;
+}
+.feature .allfeature .featurebutton:hover{
+    background-color: rgba(199, 166, 199, 0.812);
+}

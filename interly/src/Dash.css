@@ -1,0 +1,59 @@
+.dashthings{
+    display:flex;
+    flex-direction: column;
+    background-color: #ececec;
+}
+
+.dashthings .titles{
+    margin-left: 20px;
+    font-size: 20px;
+    margin-top: 0;
+    color: rgb(132, 129, 129)
+}
+
+.dashthings .alldashcard{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 0;
+}
+
+.dashthings .greetuser{
+    height: 300px;
+    margin: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+    border-radius: 60px;
+    background-color: rgba(199, 166, 199, 0.812);
+}
+.dashthings .greetuser .greetimage{
+    height: 400px;
+}
+
+.dashthings .greetuser .motivate{
+    display: flex;
+    flex-direction: column;
+}
+
+.dashthings .greetuser .motivate .username{
+    margin-bottom: 0;
+    font-size: 50px;
+}
+
+.dashthings .greetuser .motivate .quote{
+    margin-top: 0;
+}
+
+.dashthings .pastana{
+    display: flex;
+    font-family: 'Courier New', Courier, monospace;
+    height: 70px;
+    margin: 50px;
+    margin-top: 0; 
+    padding: 20px;
+    border-radius: 30px;
+    background-color: rgba(128, 128, 128, 0.476);
+}

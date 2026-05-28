@@ -1,0 +1,32 @@
+.featureheader{
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featureheader .featurebox .featurename{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 0;  
+}
+
+.featureheader .featurebox .c1{
+    margin-top: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+
+.featureheader .other .notification{
+    margin: 20px;
+    font-size: 40px;
+}
+
+.featureheader .other .logout{
+    margin: 20px;
+    font-size: 40px;
+}

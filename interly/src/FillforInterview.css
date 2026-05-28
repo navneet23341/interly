@@ -1,0 +1,12 @@
+.fillbox{
+    border: 2px solid pink;
+    flex: 1;
+}
+
+.fillbox .videobox{
+
+}
+
+.fillbox .fill{
+
+}

@@ -1,0 +1,21 @@
+.dashcard{
+    margin: 30px;
+    width: 300px;
+    border-radius: 30px;
+    align-items: center;
+    text-align: center;
+    margin-top: 0;
+}
+
+.dashcard .metric{
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding-top: 5px;
+}
+
+.dashcard .about{
+    font-size: small;
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 0;
+}
