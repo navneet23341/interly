@@ -18,6 +18,12 @@
     margin-top: 0;
 }
 
+.dashthings .alldashcard .moveto{
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+}
+
 .dashthings .greetuser{
     height: 300px;
     margin: 50px;

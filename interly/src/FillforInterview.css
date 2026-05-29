@@ -1,12 +1,57 @@
 .fillbox{
-    border: 2px solid pink;
     flex: 1;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
 }
 
-.fillbox .videobox{
-
+.fillbox .wrapthem{
+    width: 1000px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 30px;
+    border-radius: 50px;
+    background-color: rgba(199, 166, 199, 0.812);
+    box-shadow: 2px 2px 20px;
 }
 
-.fillbox .fill{
+.fillbox .wrapthem .videobox{
+    height: 650px;
+    box-shadow: 1px 1px 30px;
+    border-radius: 50px;
+}
 
+.fillbox .wrapthem .fillform{
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.fillbox .wrapthem .fillform .formitem{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.fillbox .wrapthem .fillform .formitem select{
+    font-size: 20px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.fillbox .wrapthem .fillform #infosubmit{
+    width: 200px;
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
 }
