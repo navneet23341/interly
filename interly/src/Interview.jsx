@@ -1,9 +1,17 @@
 import { useEffect, useState } from "react"
 import "./Interview.css"
+import { useLocation } from "react-router-dom";
 
 function Interview(){
     const [second , setsecond] = useState(0);
     const [running , setrunning] = useState(false);
+    const location = useLocation();
+    const [answer,setanswer] = useState("");
+    const [counter , setcounter] =useState(0);
+
+    const {Questions , role} = location.state;
+    const [Finalques , setFinalques] = useState(Questions);
+    
 
     useEffect(()=>{
         let interval;
@@ -27,12 +35,36 @@ function Interview(){
         }
         return num;
     }
+ 
+    useEffect(()=>{
+        if(counter === 0) return;
+
+        async function fetchNext(){
+            const response= await fetch("http://localhost:3000/interview/next",{
+                method:"POST",
+                headers:{
+                    "Content-Type":"application/json",
+                },
+                body: JSON.stringify({
+                    answer,
+                })
+            })
+
+            const newque = await response.json();
+            setFinalques(prev=> [...prev , ...newque.question]);
+        }
+        fetchNext();
+        setanswer("");
+    },[counter])
+    console.log(counter);
+
+    
 
     return(
         <div className="interviewpage">
         <div className="bigrow">
             <div className="face">
-                click 'start' to start interview
+                {!running? "click 'start' to start interview": Finalques[counter]}
             </div>
             <div className="controls">
                 <button className="startin" onClick={()=>setrunning(r=> !r)}>{running? "pause":"start"}</button>
@@ -40,8 +72,11 @@ function Interview(){
                 <button className="end">end</button>
             </div>
         </div>
-        <textarea className="type"></textarea>
+        <div className="handleanswer">
+            <textarea value={answer} className="type" onChange={(e)=> setanswer(e.target.value)} placeholder="write your answer here.."></textarea>
+            <button className="textsubmit" disabled={!answer.trim()} onClick={()=>setcounter(c=> c+1)}>submit</button>
         </div>
+    </div>
     )
 }
 
